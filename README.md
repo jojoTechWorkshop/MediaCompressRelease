@@ -16,6 +16,18 @@ MediaSlim 是一款 macOS 本地图片压缩工具，在兼顾画质的同时减
 - 可随时取消批处理，并在 Finder 中快速定位输出文件。
 - 支持简体中文和英文界面，以及应用内自动更新。
 
+## 压缩效果:与 TinyPNG 的对比
+
+我们用 79 张 PNG + 94 张 JPEG 的真实与公开语料,对 MediaSlim 和 TinyPNG 做了
+逐图配对测量(SSIMULACRA2 / SSIM / PSNR + 人工盲测),并公开全部逐图原始数据:
+
+- **JPEG**:每张图保证感知质量下限(SSIMULACRA2 ≥ 72),同质量下限下比 TinyPNG 省 15%;
+- **PNG**:可比样本下体积持平、质量配对中位略优,最差 5% 画质下限更好;
+- 短板同样如实公开:文字/UI 类 PNG 截屏画质小幅落后 TinyPNG。
+
+完整报告(含方法论、放大对比图与逐图 CSV 数据):
+**[中文版](docs/comparison-vs-tinypng.zh-CN.md)** · **[English](docs/comparison-vs-tinypng.en.md)**
+
 ## 系统要求
 
 - macOS 13 Ventura 或更高版本。
