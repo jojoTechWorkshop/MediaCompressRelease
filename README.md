@@ -1,5 +1,7 @@
 # MediaSlim
 
+**简体中文** · [English](README.en.md)
+
 **图片更小，隐私留在你的 Mac。**
 
 MediaSlim 是一款 macOS 本地图片压缩工具，在兼顾画质的同时减小 PNG 与 JPEG 文件体积。无需上传，拖入图片或文件夹即可开始。
@@ -16,16 +18,17 @@ MediaSlim 是一款 macOS 本地图片压缩工具，在兼顾画质的同时减
 - 可随时取消批处理，并在 Finder 中快速定位输出文件。
 - 支持简体中文和英文界面，以及应用内自动更新。
 
-## 压缩效果:与 TinyPNG 的对比
+## 压缩效果：MediaSlim vs TinyPNG
 
-我们用 79 张 PNG + 94 张 JPEG 的真实与公开语料,对 MediaSlim 和 TinyPNG 做了
-逐图配对测量(SSIMULACRA2 / SSIM / PSNR + 人工盲测),并公开全部逐图原始数据:
+我们使用 79 张 PNG 和 94 张 JPEG 的真实与公开语料，对 MediaSlim 与 TinyPNG
+进行了逐图配对测量（SSIMULACRA2 / SSIM / PSNR + 人工盲测）：
 
-- **JPEG**:每张图保证感知质量下限(SSIMULACRA2 ≥ 72),同质量下限下比 TinyPNG 省 15%;
-- **PNG**:可比样本下体积持平、质量配对中位略优,最差 5% 画质下限更好;
-- 短板同样如实公开:文字/UI 类 PNG 截屏画质小幅落后 TinyPNG。
+- **JPEG：** MediaSlim 为每张图片保证感知质量下限（SSIMULACRA2 ≥ 72），在公开语料达到相同质量下限时，输出体积比 TinyPNG 小 **15%**。
+- **PNG：** 排除 TinyPNG 原样返回的 9 张图片后，双方输出体积基本持平（MediaSlim +1.9%），MediaSlim 的配对质量中位数略优，最差 5% 的画质下限也更好。
+- **隐私：** MediaSlim 完全在本机处理并支持离线使用；TinyPNG 需要将图片上传到云端。
+- **已知短板：** MediaSlim 在文字/UI 类 PNG 截图上的画质略逊于 TinyPNG。
 
-完整报告(含方法论、放大对比图与逐图 CSV 数据):
+完整报告包含测试方法、放大对比图和逐图 CSV 原始数据：
 **[中文版](docs/comparison-vs-tinypng.zh-CN.md)** · **[English](docs/comparison-vs-tinypng.en.md)**
 
 ## 系统要求

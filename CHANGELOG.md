@@ -1,6 +1,27 @@
 # 更新日志
 
-这里记录 MediaSlim 面向用户的正式版本变化。日期以 GitHub Release 的正式发布日期为准，最新版本位于最上方。可直接用于 GitHub Release 与应用内更新的独立说明保存在 [`release-notes/`](release-notes/README.md)。
+这里记录 MediaSlim 面向用户的正式版本变化。日期以 GitHub Release 的正式发布日期为准，最新版本位于最上方。
+
+## [1.2.0] - 2026-07-23
+
+本版本重点升级了 JPEG 压缩能力，并提升了处理大型图片时的稳定性。
+
+### 改进
+
+- 重构 JPEG 压缩算法，在减小文件体积的同时保持更好的图片质量。
+- 支持超大尺寸 JPEG 图片压缩。
+- 降低压缩过程中的内存峰值，减少系统资源占用。
+- 提升整体稳定性，超大图和批量压缩过程更加可靠。
+
+## [1.1.0] - 2026-07-21
+
+本版本重点优化了 PNG 压缩效果。
+
+### 改进
+
+- 优化 PNG 压缩算法，进一步提升压缩后的图片质量。
+- 改善压缩体积与处理速度之间的平衡。
+- 在保持较小文件体积的同时缩短压缩耗时。
 
 ## [1.0.0] - 2026-07-21
 
@@ -16,6 +37,6 @@
 - 支持取消处理、在 Finder 中定位输出文件，以及简体中文和英文界面。
 - 提供经过签名与公证的 DMG 安装包，并支持 Sparkle 应用内更新。
 
-[查看本版本的完整发布说明](release-notes/v1.0.0.md)
-
+[1.2.0]: https://github.com/jojoTechWorkshop/MediaCompressRelease/releases/tag/v1.2.0
+[1.1.0]: https://github.com/jojoTechWorkshop/MediaCompressRelease/releases/tag/v1.1.0
 [1.0.0]: https://github.com/jojoTechWorkshop/MediaCompressRelease/releases/tag/v1.0.0
